@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,500|Montserrat:400,500|Playfair+Display|Allura');
+
+:root {
+  --heading-font: 'Alegreya', serif;
+  --tagline-font: 'Playfair Display', serif;
+  --fancy-font: 'Allura', cursive;
+  --body-font: 'Montserrat', sans-serif;
+
+  --nav-bg: #1117;
+  --nav-bg-hover: #111b;
+
+  --dark-colored-text: #56534c;
+  --mid-colored-text: #a47d5e;
+  --light-colored-text: #dfc691;
+}
+
+/*
+  =====================
+  = Utility Classes
+  =====================
+*/
+
+.is-caps {
+  font-variant: small-caps;
+}
+
+/* 
+  =====================
+  = Global 
+  =====================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+html {
+  font-size: 100%;
+  letter-spacing: 0.075rem;
+  color: var(--dark-colored-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  margin: 0;
+}
+
+h3 {
+  font-size: 3.125rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--mid-colored-text);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 0.75rem;
+  font-family: var(--body-font);
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+section {
+  position: relative;
+}
+
+/*
+  =====================
+  = Hero Section
+  =====================
+*/
+
+.hero {
+  background: #777777 url("../images/bread-bg.png") no-repeat;
+  background-size: cover;
+  height: 56rem;
+  color: white;
+  text-shadow: #222;
+}
+
+/*
+  =====================
+  = Navigation
+  =====================
+*/
+
+nav {
+  background-color: var(--nav-bg);
+}
+
+.nav-bar {
+  width: 79%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar > * {
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.logo {
+  font-family: var(--fancy-font);
+  font-size: 2.75rem;
+  text-align: left;
+  padding: 0.7rem 0;
+}
+
+.nav-list,
+.social-list {
+  display: flex;
+}
+
+.nav-list {
+  font-family: var(--heading-font);
+  flex-basis: 25%;
+  justify-content: space-between;
+}
+
+.social-list {
+  justify-content: flex-end;
+}
+
+.nav-list li,
+.social-list li {
+  list-style-type: none;
+  font-size: 1.05rem;
+}
+
+.social-btn {
+  padding: 0 1.125rem;
+}
+
+.social-btn:last-of-type {
+  padding-right: 0;
+}
+
+/*
+  =====================
+  = Hero Content
+  =====================
+*/
+
+.tagline {
+  font-family: var(--tagline-font);
+  font-size: 6.0rem;
+  letter-spacing: 0.3rem;
+  padding: 12.0rem 0 0 0;
+}
+
+.blurb {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+}
+
+.hero-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 1.0rem;
+  letter-spacing: 0.35rem;
+  padding: 0.85rem 2.5rem;
+  margin: 5.0rem 0 7.0rem 0;
+  background-color: var(--nav-bg);
+  border: none;
+}
+
+.hero-btn:hover {
+  background-color: var(--nav-bg-hover);
+  text-decoration: underline white;
+}
+
+/*
+  =====================
+  = Hero Dividers
+  =====================
+*/
+
+.divider {
+  font-family: var(--body-font);
+  font-size: 2.0rem;
+  padding: 3.0rem 0;
+}
+
+.divider > * {
+  display: inline-block;
+}
+
+#divider1,
+#divider5,
+#divider9 {
+  transform: translateY(-0.65rem);
+}
+
+#divider2,
+#divider6 {
+  transform-origin: 130%;
+  transform: rotate(25deg);
+}
+
+#divider4,
+#divider8 {
+  transform-origin: -70%;
+  transform: rotate(-25deg);
+}
+
+#divider9 {
+  transform: translateY(-1.0rem);
+}
+
+.section-divider {
+  background: white url("../images/bread-divider.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 0 1px var(--light-colored-text);  
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*
+  =====================
+  = About Section
+  =====================
+*/
+
+.about {
+  background: #f8f7f0 url("") no-repeat;
+  background-size: cover;
+  height: 45rem;
+}
+
+.about-container {
+  width: 65%;
+  padding: 5.0rem 0rem;
+  margin: 0 auto;
+}
+
+.left-about-container,
+.right-about-container {
+  width: 50%;
+}
+
+/*
+  =====================
+  = About Left Container
+  =====================
+*/
+
+.left-about-container {
+  float: left;
+  padding-right: 3.75rem;
+}
+
+.left-about-container h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.left-about-container h5 {
+  margin: 0 0 0.5rem 0;
+}
+
+.left-about-container p {
+  margin: 2.5rem 0;
+}
+
+.chef-img {
+  height: 6.0rem;
+  margin: 2.75rem 0;
+}
+
+.chef-img * {
+  display: inline;
+  vertical-align: middle;
+}
+
+.chef-img h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-top: solid 1px var(--dark-colored-text);
+  border-bottom: solid 1px var(--dark-colored-text);
+  padding: 0.75rem 1.5rem;
+  margin: 0 2.0rem;
+}
+
+.chef-img img {
+  border-radius: 50%;
+  height: 100%;
+}
+
+.quote * {
+  font-size: 1.5rem;
+  color: var(--mid-colored-text);
+  width:50%;
+  display: inline-block;
+}
+
+.quote-text {
+  font-family: var(--fancy-font);
+}
+
+.left-quote,
+.right-quote {
+  font-size: 4.0rem;
+  color: #aaa8a4;
+  width: 10%;
+}
+
+.left-quote {
+  text-align: left;
+}
+
+.right-quote {
+  text-align: right;
+}
+
+/*
+  =====================
+  = About Right Container
+  =====================
+*/
+
+.right-about-container {
+  float: right; 
+ }
+
+.cake-grid {
+  position: relative;
+  margin: 0;
+}
+
+.cake-grid img {
+  width: 45%;
+  margin: 0.5rem;
+  outline: 5px solid white;
+  outline-offset: -10px;
+}
+
+.cake-grid h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--light-colored-text);
+  line-height: 2.5rem;
+  width: 12vw;
+  height: 12vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  background: #fffe;
+  border: solid 3px transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 0 2px #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  =====================
+  = Recipes Section
+  =====================
+*/
+
+.recipes {
+  background: #ecece6 url("../images/recipes-bg.png") no-repeat;
+  background-size: cover;
+  height: 45rem;
+}
+
+.recipes-container {
+  background: white;
+  width: 55%;
+  height: 75%;
+  position: relative;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  display: flex;
+  box-shadow: -8px 10px 30px #2225;
+}
+
+.recipes-container>img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right-recipes-container {
+  position: relative;
+}
+
+.right-recipes-container p,
+.right-recipes-container h3,
+.right-recipes-container h5 {
+  text-align: left;
+  padding-right: 5.5rem;
+  padding-left: 4.0rem;
+}
+
+.right-recipes-container h3 {
+  padding-top: 4.5rem
+}
+
+.right-recipes-container p {
+  padding-top: 4.0rem;
+}
+
+.carousel {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2.5rem;
+}
+
+.carousel * {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.carousel img {
+  padding: 0 0.75rem;
+  border-radius: 50%;
+  max-width: 22.5%;
+  transition-duration: 0.25s;
+}
+
+.carousel img:hover {
+  transition-duration: 0.25s;
+  transform: scale(1.2);
+}
+
+.carousel-arrow {
+  position: relative;
+  color: var(--dark-colored-text);
+  border-radius: 50%;
+  border: solid 2px var(--dark-colored-text);
+  padding: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  
+}
+
+.carousel-arrow>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1.25rem;
+  line-height: 0;
+}
+
+.carousel-arrow:hover,
+.carousel-arrow i {
+  border-color: var(--light-colored-text);
+  color: var(--light-colored-text);
+}
+
+.time-box {
+  background-color: white;
+  position: absolute;
+  top: -9%;
+  right: -10%;
+  height: 10vw;
+  width: 10vw;
+  box-shadow: -8px 10px 30px #2225;
+}
+
+.time-box * {
+  text-align: center;
+}
+
+.time-box h3 {
+  font-size: 5.5rem;
+  color: var(--light-colored-text);
+}
+
+.time-box h5 {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.time-box p {
+  font-size : 1.0rem;
+}
