@@ -4,6 +4,9 @@ body{
 .navbar{
     background: rgba(7,68,199,1);
 }
+.bg_head{
+    background: #232999;
+}
 .bg_red{
     background: #0744c7;
 }
@@ -51,22 +54,6 @@ input{
 }
 .card img{
     margin-top: -50px;
-}
-.card_hover:hover, .card:hover{
-    background: #00226b;
-}
-.card_hover:hover li, .card:hover h4, .card:hover{
-    color: white;
-}
-.card_hover:hover .card-footer{
-    font-size: 0.9rem;
-    color: brown;
-}
-.card .card-footer{
-    font-size: 0.9rem;
-}
-.card_hover:hover a{
-    background: #0744c7;
 }
 .card li{
     font-size: 0.95rem;
