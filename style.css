@@ -23,11 +23,11 @@ body{
 }
 .img{
     background: url('img/showcase.jpg')no-repeat center center/cover;
-    height: 80vh;
+    height: 90vh;
 }
 .showcase{
     background: rgba(0, 0, 0, 0.);
-    height: 80vh;
+    height: 90vh;
 }
 .align{
     display: flex;
